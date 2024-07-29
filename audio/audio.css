@@ -1,0 +1,19 @@
+body{
+	background-image: url(11.jpg);
+	
+}
+h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 85px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: #000;
+}
+.video{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	margin: 50px;
+}

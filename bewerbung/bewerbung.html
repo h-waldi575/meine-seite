@@ -1,0 +1,269 @@
+<! DOCTYPE HTML>
+<HTML lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/3.3.7/css/bootstrap.min.css">
+	<title>profile cards desing </title>
+
+	<style>
+		body{
+			font-family: sans-serif;
+			background: url(ne.jpeg);
+			background-size: cover;
+		}
+
+		.team-box input{
+			position: absolute;
+			display: none;
+		}
+		.team-box form ul{
+			padding: 0;
+			margin: 0;
+		}
+		.team-box .team-name{
+			position: relative;
+			display: block;
+			width: 420px;
+			transform: rotate(-90deg);
+			top: 197px;
+			left: -185px;
+			text-align: left;
+			padding-left: 25px;
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+		.team-box label{
+			position: relative;
+			display: block;
+			height: 420px;
+			width: 50px;
+			z-index: 3;
+			background: #ff6666;
+			text-align: center;
+			border-right: 1px solid #ffffff;
+			border-left: 1px solid #ffffff;
+			margin-bottom: 0;
+			float: left;
+			overflow: hidden;
+			transition: width 1s ease, background 0.5s ease;
+		}
+		.team-box #rad2 + .team-box label{
+			background: #888;
+			transition: width 1s ease, background 0.5s ease
+		}
+		.team-box label:hover,.team-box #rad2 + .team-box label:hover{
+			background: #e65151;
+			color: white;
+			cursor: pointer;
+		}
+		.team-box{
+			position: relative;
+			overflow: hidden;
+			padding: 35px 0;
+		}
+		.team-box .accslide{
+			display: block;
+			height: 420px;
+			width: 0;
+			background: white;
+			opacity: 0;
+			overflow-x: hidden;
+			float: left;
+			transition: all 1s ease;
+		}
+		.team-box .accslide .team-about{
+			padding-left: 40px;
+			width: 579px;
+			display: inline-block;
+			float: left;
+			background: #ffffff;
+			z-index: 1;
+		}
+		.team-box .accslide .team-img{
+			display: inline-block;
+			width: 355px;
+			float: right;
+			position: absolute;
+			margin-top: -36px;
+			border: 4px solid white;
+		}
+		.team-box .accslide .team-inner{
+			width: 1200px;
+			background: #ffffff;
+		} 
+		.team-box input[type="radio"]:checked+label ~ .accslide{
+			width: 1200px;
+			opacity: 1;
+		}
+		ul li{
+			list-style: none;
+			text-decoration: none;
+		}
+		p{
+			margin-top: 80px;
+		}
+		.btn-danger{
+			padding: 10px 40px;
+			border-radius: 0px;
+		}
+	</style>
+</head>
+<body>
+	<section id="team" class="team circle-left">
+		<div class="container">
+	<div class="row">
+<div class="col-sm-12">
+	<div class="team-box">
+<form action="">
+	<ul>
+<li>
+	<input type="radio" id="rad1" checked name="rad">
+<label for="rad1">
+	<span class="team-name text-white">
+		Гейн Алла 
+	</span>
+</label>
+<div class="accslide d-flex">
+	<div class="team-inner">
+		<div class="team-about">
+			<p>
+				Савкова Алла Васильевна родилась в 1963 году  поселке Никель в Мурмонской области Российской Федерации в семье рабочих.В 1970 году пошла в школу где проучилась 10 лет и с успехом закончила учебу.В 1980 году переехала в 
+				город - герой Ленинград и поступила в Гатчинское проффисиональное училище где после окончания по расспределению
+				поступила на "Пролетарский завод" в качестве "Оператор станков с ЧПУ" 3 разряда.С 1980 года работала в цехе №9
+				до 1987 года а после переехала в п.Стеклянный Всеволожского района Ленинградской области и поступила на завод
+				"Эксперементальный завод техники алмазного бурения" в качестве токаря станков с ЧПУ.Проработала там до 1993 года в котором переехала в Германию.
+				Переезд дался не легко так как сразу пошла на языковые курсы а после пошла на работу.В общей сложности я прожила в Германии 30 лет научилась учиться и работать в другой стране и воспитала 3 прекрасных детей.
+
+	</p>
+	<span class="hr-line ml-0 mt-4 mt-4"></span>
+	<a href="" class="btn btn-danger">Назад</a>
+</div>
+<div class="team-img">
+	<img src="img/foto1.png" alt="foto">
+</div>
+	</div>
+</div>
+	</li>
+	<li>
+	<input type="radio" id="rad2" checked name="rad">
+<label for="rad2">
+	<span class="team-name text-white">
+		Гейн Илья  
+	</span>
+</label>
+<div class="accslide d-flex">
+	<div class="team-inner">
+		<div class="team-about">
+			<p>
+Гейн Илья Владимирович родился в 1998 году в городе Дилленбурге Хессенской области Германия в семье рабочих.
+В 2005 году пошeл в школу (Walldorfschule) часная школа где проучился до 2016 года .В том же году я поступил
+учиться на (Фитнестренера) где проучился 3 долгих года на профессию.Сейчас мне 25 лет и я надеюсь получить хорошее
+место на спортивном поприще да и я вообщем молодой еще и у меня все еще впереди .Надеюсь все будет хорошо.
+	</p>
+	<span class="hr-line ml-0 mt-4 mt-4"></span>
+	<a href="" class="btn btn-danger"></a>
+</div>
+<div class="team-img">
+	<img src="img/foto2.png" alt="Foto">
+</div>
+	</div>
+</div>
+	</li>
+	<li>
+	<input type="radio" id="rad3" checked name="rad">
+<label for="rad3">
+	<span class="team-name text-white">
+		Гейн Лина 
+	</span>
+</label>
+<div class="accslide d-flex">
+	<div class="team-inner">
+		<div class="team-about">
+			<p>
+Гейн Лина Владимировна родилась в городе-герои Ленинграде в 1986 году.
+Мать Гейн Алла Васильевна по профессии токарь станков с ЧПУ,отец
+Гейн Владимир Гильморович по профессии токарь. После переезда в Германию
+я пошла учиться в начальную школу,а после окончания школы начала осваивать
+профессию врача (Fisioterapoitin) где отучилась в общей сложности 3 года.
+Теперь я имею свою клинику где и работаю по профессии. Работа мне нравится
+и приносит мне удовольствие и содержание семьи.
+
+	</p>
+	<span class="hr-line ml-0 mt-4 mt-4"></span>
+	<a href="" class="btn btn-danger"></a>
+</div>
+<div class="team-img">
+	<img src="img/foto3.png" alt="foto">
+</div>
+	</div>
+</div>
+	</li>
+	<li>
+	<input type="radio" id="rad4" checked="" name="rad">
+<label for="rad4">
+	<span class="team-name text-white">
+	Гейн Владимир 
+	</span>
+</label>
+<div class="accslide d-flex">
+	<div class="team-inner">
+		<div class="team-about">
+			<p>
+Гейн Владимир Гильморович родился в 1962 году в далекой Киргизкой ССР Ошской области городе
+Майли-Сай в семье робочего и ткачихи. Мать моя Вилт Лина Оттовна, отец Гейн Гильмар Рафаелович.
+В школу я пошел в 1969 году и проучился 10 лет.В 1979 году я поступил в ПТУ №88 города Ленинграда
+где после окончания училища меня взали на "Пролетарский завод" в качестве токаря 3 разряда.
+Я проработал на этом заводе до июня 1981 года.После этого меня забрали в Красную Армию в качестве
+солдата срочной службы. В Красной Армии я прослужил 2 года где и мобилизовался. После службы в Армии
+я снова пришeл на "Пролетарский завод" где проработал до 1987 года. Потом я сменил место жительства
+на п. Стеклянный Всеволожского р-на Ленинградской области.Там я поступил на "Эксперементальный завод
+техники алмазного бурения",где я проработал до переезда в Германию.В 1993 году я переехал в Германию.
+	</p>
+	<span class="hr-line ml-0 mt-4 mt-4"></span>
+	<a href="" class="btn btn-danger"></a>
+</div>
+<div class="team-img">
+	<img src="img/foto4.png" alt="foto">
+</div>
+	</div>
+</div>
+	</li>
+	<li>
+	<input type="radio" id="rad1" checked name="rad">
+<label for="rad1">
+	<span class="team-name text-white">
+		Гейн Алиса 
+	</span>
+</label>
+<div class="accslide d-flex">
+	<div class="team-inner">
+		<div class="team-about">
+			<p>
+Гейн Алиса Владимировна родилась в  городе-герои Ленинграде в 1991 году.
+Мать Гейн Алла Васильевна по профессии токарь станков с ЧПУ,отец
+Гейн Владимир Гильморович по профессии токарь. Еще маленким ребенком я переехала
+с родителями в Германию и в 2005 году пошла в школу в 1 класс в Германии. После
+окончании школы я пошла работать на фирму " " где проработала год с небольшим.
+В 2016 году я поступила в Зигенский Университет на профессию Учитель.7 долгих лет учебы
+остались позади и после окончания Университета я родила сына.Теперь я дома и забочусь о
+нем.
+	</p>
+	<span class="hr-line ml-0 mt-4 mt-4"></span>
+	<a href="" class="btn btn-danger"></a>
+</div>
+<div class="team-img">
+	<img src="img/foto5.png" alt="foto">
+</div>
+	</div>
+</div>
+	</li>
+
+	</ul>
+	</form>
+</div>
+	</div>
+</div>
+	</div>
+</section>
+	</body>

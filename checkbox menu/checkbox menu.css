@@ -1,0 +1,41 @@
+body{
+  background-color:#d8ff00;
+}
+img{
+  margin-left: 700px;
+
+}
+input[type="checkbox"] {
+  display: none;
+}
+label{
+  padding-left:20px;
+}
+label::before{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  vertical-align: middle;
+  margin-left: -10px;
+  margin-right: 10px;
+  transition: 0.4s;
+}
+input[type="checkbox"]:checked + label::before{
+  background-color: red;
+  border-radius: 50%;
+  content: 'v';
+  text-align: center;
+  font-family: sans-serif;
+}
+h1,h2{
+  display: flex;
+justify-content: center;
+}
+
+p{
+  font-size: 27px;
+  letter-spacing: 2px;
+  color: #020202;
+}
